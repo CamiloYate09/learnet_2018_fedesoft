@@ -1,0 +1,207 @@
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    // font awesome
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp' crossorigin='anonymous')
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    //JQUERY
+    link(href='https://code.jquery.com/jquery-3.3.1.slim.js')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    // Compiled and minified CSS
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css')
+    title Plantilla Maestra
+    style.
+        header {
+            background: url(images/man.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background: transparent;
+        }
+// navbar
+header
+    nav.nav-wrapper.transparent
+        .container
+            a.brand-logo(href='images/LogoImage.png') Learnet
+            a.sidenav-trigger(href='#' data-target='mobile-menu')
+                i.material-icons menu
+            ul.right.hide-on-med-and-down
+                li
+                    a(href='#photos') Photo&apos;s
+                li
+                    a(href='#services') Services
+                li
+                    a(href='#contact') Contact
+                li
+                    a.tooltipped.btn-floating.btn-small.indigo.darken-4(href='#' data-position='bottom' data-tooltip='Instagram')
+                        i.fab.fa-instagram
+                li
+                    a.tooltipped.btn-floating.btn-small.indigo.darken-4(href='#' data-position='bottom' data-tooltip='Facebook')
+                        i.fab.fa-facebook
+                li
+                    a.tooltipped.btn-floating.btn-small.indigo.darken-4(href='#' data-position='bottom' data-tooltip='Twitter')
+                        i.fab.fa-twitter
+            ul#mobile-menu.sidenav.grey.lighten-2
+                li
+                    a(href='#') Photo&apos;s
+                li
+                    a(href='#') Services
+                li
+                    a(href='#') Contact
+// photo / grid
+section#photos.container.section.scrollspy
+    .row
+        .col.s12.l4
+            img.responsive-img.materialboxed(src='img/portrait.jpg' alt='')
+        .col.s12.l6.offset-l1
+            h2.indigo-text.text-darken-4 Portraits
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+    .row
+        .col.s12.l4.offset-l1.push-l7
+            img.responsive-img.materialboxed(src='img/city.jpg' alt='')
+        .col.s12.l6.offset-l1.pull-l5.right-align
+            h2.indigo-text.text-darken-4 Cityscapes
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+    .row
+        .col.s12.l4
+            img.responsive-img.materialboxed(src='img/nature.jpg' alt='')
+        .col.s12.l6.offset-l1
+            h2.indigo-text.text-darken-4 Nature
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+// parallax
+.parallax-container
+    .parallax
+        img.responsive-img(src='img/street.jpg' alt='')
+// services / tabs
+section#services.section.container.scrollspy
+    .row
+        .col.s12.l4
+            h2.indigo-text.text-darken-4 What I do..
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+            p
+                | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
+        .col.s12.l6.offset-l2
+            // tabs
+            ul.tabs
+                li.tab.col.s6
+                    a.active.indigo-text.text-darken-4(href='#photography') Photography
+                li.tab.col.s6
+                    a.indigo-text.text-darken-4(href='#editing') Editing
+            #photography.col.s12
+                p.flow-text.indigo-text.text-darken-4 Photography
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+                p
+                    | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
+            #editing.col.s12
+                p.flow-text.indigo-text.text-darken-4 Editing
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+                p
+                    | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
+// parallax
+.parallax-container
+    .parallax
+        img.responsive-img(src='img/stars.jpg' alt='')
+// contact form
+section#contact.section.container.scrollspy
+    .row
+        .col.s12.l5
+            h2.indigo-text.text-darken-4 Get in Touch
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+            p
+                | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+            p
+                | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
+        .col.s12.l5.offset-l2
+            form
+                .input-field
+                    i.material-icons.prefix email
+                    input#email(type='email')
+                    label(for='email') Your Email
+                .input-field
+                    i.material-icons.prefix message
+                    textarea#message.materialize-textarea(cols='20' rows='20')
+                    label(for='message') Your Message
+                .input-field
+                    i.material-icons.prefix date_range
+                    input#date.datepicker(type='text')
+                    label(for='date') Choose a date you need me for...
+                .input-field
+                    p Services required:
+                    p
+                        label
+                            input(type='checkbox')
+                            span Photography
+                    p
+                        label
+                            input(type='checkbox')
+                            span Photo Editing
+                .input-field.center
+                    button.btn Submit
+// footer
+footer.page-footer.grey.darken-3
+    .container
+        .row
+            .col.l6.s12
+                h5 About Me
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+            .col.l4.offset-l2.s12
+                h5.white-text Connect
+                ul
+                    li
+                        a.grey-text.text-lighten-3(href='#') Facebook
+                    li
+                        a.grey-text.text-lighten-3(href='#') Twitter
+                    li
+                        a.grey-text.text-lighten-3(href='#') Linked In
+                    li
+                        a.grey-text.text-lighten-3(href='#') Instagram
+    .footer-copyright.grey.darken-4
+        .container.center-align &copy; 2018 Learnet-Fedesoft
+// Compiled and minified JavaScript
+script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js')
+script.
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true,
+            yearRange: 1
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+    });

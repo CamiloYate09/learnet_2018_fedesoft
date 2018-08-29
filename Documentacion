@@ -1,0 +1,8 @@
+Primeros pasos
+1:(instalado node -v  and npm )
+2:(npm install -g express-generator)
+3:(express learnet) nombre del proyecto (NOS CREA EL PROYECTO BASE)
+4:(npm install)instar los paquetes dentro de la carpeta anterior creada
+5:(npm start) correr el servidor
+6:(npm install --save pg) instalar el paquete de postgresql
+7:(repositorio en github) => (learnet_2018_fedesoft)
