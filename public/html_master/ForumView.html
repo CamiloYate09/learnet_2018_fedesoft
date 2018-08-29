@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Foros - LearNet</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../graduation-cap-solid.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/forum/ForumView.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <header>
+        <div class="navbar navbar-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img id="logo" src="../static/img/LogoImage.png" class="img-fluid pull-xs-left" alt="LogoLN">
+                    <img id="logoletters" src="../static/img/LogoLettersWhite.png" class="img-fluid pull-xs-left" alt="Learnet">
+                </a>
+                <button class="sidenav-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- end of NavBar -->
+
+    <div class="container-fluid forumContent">
+
+        <p class="lead font-weight-bold" style="width: 200px;">
+            Titulo del foro.
+        </p>
+        <small style="position: absolute;top: 48px;font-style: italic;opacity: 0.7;">Ultima actualizacion hace N dias.</small>
+        <p class="float-right" style="font-size:13px;position: absolute; top:25px;margin: 0;right: 25px;opacity: 0.8;">
+            Subido el dd de (mes) del año (año).
+        </p>
+
+        <hr class="my-4">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem dignissimos nobis quos repellendus veniam deleniti
+            exercitationem, iste, id vero reiciendis voluptatibus ullam aut officiis eos, voluptatum praesentium? Omnis,
+            cumque.
+        </p>
+
+        <hr class="my-4 mg-bottom-0">
+        <footer class="text-muted footercontent">
+            <div class="container d-flex align-items-center">
+                <img data-src="holder.js/32x32?theme=thumb&amp;bg=007bff&amp;fg=007bff&amp;size=1" alt="32x32" class="mr-2 rounded" style="width: 45px; height: 45px;"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd68%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd68%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    data-holder-rendered="true">
+                <div class="lh-100">
+                    <h5 class="mb-0 text-white lh-100">
+                        <a class="linktr" href="#">@username</a>
+                        </a>
+                    </h5>
+                    <small>Nombre completo del usuario</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="container forumRta">
+        <div class="form-area">
+            <form role="form">
+                <h3>Responde a este foro:</h3>
+                <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="cuerpo" placeholder="Escribe aqui la respuesta" maxlength="800" rows="7"></textarea>
+                    <span class="help-block">
+                        <p id="characterLeft" class="help-block ">Has superado el limite de caracteres</p>
+                    </span>
+                </div>
+
+                <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Subir Respuesta</button>
+            </form>
+        </div>
+    </div>
+<div class="col-md-12">
+    <h2 class="h2Share">Compartir: </h2>
+    <ul class="social-network social-circle">
+        <li>
+            <a href="#" class="icoRss" title="Rss">
+                <i class="fa fa-rss"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icoFacebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icoTwitter" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icoGoogle" title="Google +">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icoLinkedin" title="Linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a class="linktr" href="#">Volver arriba</a>
+            </p>
+            <p>LearNet. La educacion a tu alcance.</p>
+            <p>Eres nuevo?
+                <a class="linktr" href="UserRegister.html">Registrate!</a> o visita nuestro
+                <a class="linktr" href="ForumMenu.html">Foro</a>. donde nuestra comunidad te ayudara sin dudarlo. </p>
+        </div>
+    </footer>
+
+    <!-- Sidenav Here -->
+    <div class="sidenav">
+    <div class="container sidenav-header">
+        <div class="close-nav">
+            <i class="fas fa-times"></i>
+        </div>
+        <span class="sidenav-heading">Menu</span>
+    </div>
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <i class="fas fa-user"></i> Usuario
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown" role="menu">
+        <a class="dropdown-item" href="Login.html">Ingresar</a>
+        <a class="dropdown-item" href="UserRegister.html">Registrarme</a>
+    </div>
+    <hr class="my-4">
+    <a href="../Cover/cover.html" title="">
+        <i class="fas fa-home"></i> Inicio</a>
+    <a href="../SearchPage/Buscador.html" title="">
+        <i class="fas fa-search"></i> Buscador</a>
+    <a href="#" title="">
+        <i class="fas fa-book-reader"></i> Blog</a>
+    <a class="activesb" href="ForumMenu.html" title="">
+        <i class="fab fa-wpforms"></i> Foro</a>
+    <a href="../Cover/contacto.html" title="">
+        <i class="fas fa-question-circle"></i> Acerca de</a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+    <script src="Forum View for Bootstrap_files/sidenav.js"></script>
+    <script src="Forum View for Bootstrap_files/validarCaracteres.js"></script>
+
+</body>
+
+</html>

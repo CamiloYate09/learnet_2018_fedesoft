@@ -1,207 +1,141 @@
+doctype html
 head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    // font awesome
-    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp' crossorigin='anonymous')
-    // Import Google Icon Font
-    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
-    //JQUERY
-    link(href='https://code.jquery.com/jquery-3.3.1.slim.js')
-    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
-    // Compiled and minified CSS
-    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css')
-    title Plantilla Maestra
-    style.
-        header {
-            background: url(images/man.jpg);
-            background-size: cover;
-            background-position: center;
-            min-height: 1000px;
-        }
-
-        @media screen and (max-width: 670px) {
-            header {
-                min-height: 500px;
-            }
-        }
-
-        .section {
-            padding-top: 4vw;
-            padding-bottom: 4vw;
-        }
-
-        .tabs .indicator {
-            background-color: #1a237e;
-        }
-
-        .tabs .tab a:focus, .tabs .tab a:focus.active {
-            background: transparent;
-        }
-// navbar
+    meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous')
+    link(rel='icon' href='../../Learnet/learnet/graduation-cap-solid.svg')
+    title LearNet - Buscador
+    // Bootstrap core CSS
+    link(href='static/bootstrap.css' rel='stylesheet')
+    // Custom styles for this template
+    link(href='static/SearchPage.css' rel='stylesheet')
+    link(rel='stylesheet' href='static/animations.css')
 header
-    nav.nav-wrapper.transparent
-        .container
-            a.brand-logo(href='images/LogoImage.png') Learnet
-            a.sidenav-trigger(href='#' data-target='mobile-menu')
-                i.material-icons menu
-            ul.right.hide-on-med-and-down
-                li
-                    a(href='#photos') Photo&apos;s
-                li
-                    a(href='#services') Services
-                li
-                    a(href='#contact') Contact
-                li
-                    a.tooltipped.btn-floating.btn-small.indigo.darken-4(href='#' data-position='bottom' data-tooltip='Instagram')
-                        i.fab.fa-instagram
-                li
-                    a.tooltipped.btn-floating.btn-small.indigo.darken-4(href='#' data-position='bottom' data-tooltip='Facebook')
-                        i.fab.fa-facebook
-                li
-                    a.tooltipped.btn-floating.btn-small.indigo.darken-4(href='#' data-position='bottom' data-tooltip='Twitter')
-                        i.fab.fa-twitter
-            ul#mobile-menu.sidenav.grey.lighten-2
-                li
-                    a(href='#') Photo&apos;s
-                li
-                    a(href='#') Services
-                li
-                    a(href='#') Contact
-// photo / grid
-section#photos.container.section.scrollspy
-    .row
-        .col.s12.l4
-            img.responsive-img.materialboxed(src='img/portrait.jpg' alt='')
-        .col.s12.l6.offset-l1
-            h2.indigo-text.text-darken-4 Portraits
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-    .row
-        .col.s12.l4.offset-l1.push-l7
-            img.responsive-img.materialboxed(src='img/city.jpg' alt='')
-        .col.s12.l6.offset-l1.pull-l5.right-align
-            h2.indigo-text.text-darken-4 Cityscapes
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-    .row
-        .col.s12.l4
-            img.responsive-img.materialboxed(src='img/nature.jpg' alt='')
-        .col.s12.l6.offset-l1
-            h2.indigo-text.text-darken-4 Nature
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-// parallax
-.parallax-container
-    .parallax
-        img.responsive-img(src='img/street.jpg' alt='')
-// services / tabs
-section#services.section.container.scrollspy
-    .row
-        .col.s12.l4
-            h2.indigo-text.text-darken-4 What I do..
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            p
-                | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
-        .col.s12.l6.offset-l2
-            // tabs
-            ul.tabs
-                li.tab.col.s6
-                    a.active.indigo-text.text-darken-4(href='#photography') Photography
-                li.tab.col.s6
-                    a.indigo-text.text-darken-4(href='#editing') Editing
-            #photography.col.s12
-                p.flow-text.indigo-text.text-darken-4 Photography
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-                p
-                    | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
-            #editing.col.s12
-                p.flow-text.indigo-text.text-darken-4 Editing
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-                p
-                    | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
-// parallax
-.parallax-container
-    .parallax
-        img.responsive-img(src='img/stars.jpg' alt='')
-// contact form
-section#contact.section.container.scrollspy
-    .row
-        .col.s12.l5
-            h2.indigo-text.text-darken-4 Get in Touch
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            p
-                | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            p
-                | Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.
-        .col.s12.l5.offset-l2
-            form
-                .input-field
-                    i.material-icons.prefix email
-                    input#email(type='email')
-                    label(for='email') Your Email
-                .input-field
-                    i.material-icons.prefix message
-                    textarea#message.materialize-textarea(cols='20' rows='20')
-                    label(for='message') Your Message
-                .input-field
-                    i.material-icons.prefix date_range
-                    input#date.datepicker(type='text')
-                    label(for='date') Choose a date you need me for...
-                .input-field
-                    p Services required:
-                    p
-                        label
-                            input(type='checkbox')
-                            span Photography
-                    p
-                        label
-                            input(type='checkbox')
-                            span Photo Editing
-                .input-field.center
-                    button.btn Submit
-// footer
-footer.page-footer.grey.darken-3
+    .navbar.navbar-dark.shadow-sm
+        .container.d-flex.justify-content-between
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                img#logo.img-fluid.pull-xs-left(src='static/img/LogoImage.png' alt='LogoLN')
+                img#logoletters.img-fluid.pull-xs-left(src='static/img/LogoLettersWhite.png' alt='Learnet')
+            button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+main(role='main')
+    #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+        //
+          Carousel Toogler for Slide
+          <ol class="carousel-indicators">
+          <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+          <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+          </ol>
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.w-100(src='http://www.revistagenteqroo.com/wp-content/uploads/2018/03/bbva-educacion-e1464704439593-1920x0-c-f.jpg' alt='First slide')
+            .carousel-item
+                img.d-block.w-100(src='https://www.ruizhealytimes.com/sites/default/files/styles/articles_horizontal/public/articles/2017/11/educacion-financiera.jpg?itok=nFni0Hgw' alt='Second slide')
+            .carousel-item
+                img.d-block.w-100(src='http://noticias.universia.com.bo/net/images/educacion/e/ed/edu/educacion-online-1449602231545.png' alt='Third slide')
+            section.jumbotron.text-center
+                .container
+                    h1.jumbotron-heading Que deseas buscar hoy?
+                    .input-group.mb-3
+                        input.form-control(type='text' placeholder='Explora lugares, cursos virtuales, paginas web...' aria-label="Recipient's username" aria-describedby='button-addon2')
+                        .input-group-append
+                            button#button-addon2.btn.btn-outline-secondary(type='button') Buscar
+.container.mt-40
+    h3.text-center Algo que puede interesarte
+    .row.mt-30
+        .col-md-4.col-sm-6
+            .box5
+                img(src='http://www.somidesign.com/wp-content/uploads/2014/07/6-440x320.jpg' alt='')
+                ul.icon
+                    li
+                        a.fa.fa-search(href='#')
+                    li
+                        a.fa.fa-link(href='#')
+                .box-content
+                    h3.title Finanzas
+                    span.post Analiza y estudia el
+                    br
+                    span.post movimiento del
+                    br
+                    span.post dinero y del capital
+        .col-md-4.col-sm-6
+            .box5
+                img(src='http://sitiocero.net/wp-content/uploads/2018/04/historia-800x478-440x320.jpg' alt='')
+                ul.icon
+                    li
+                        a.fa.fa-search(href='#')
+                    li
+                        a.fa.fa-link(href='#')
+                .box-content
+                    h3.title Geograf&iacute;a
+                    span.post Conoce tu mundo!
+        .col-md-4.col-sm-6
+            .box5
+                img(src='http://sitiocero.net/wp-content/uploads/2018/03/girl-2696947_960_720-440x320.jpg' alt='')
+                ul.icon
+                    li
+                        a.fa.fa-search(href='#')
+                    li
+                        a.fa.fa-link(href='#')
+                .box-content
+                    h3.title Arte
+                    span.post Explora, Expresate!
+footer.text-muted
     .container
-        .row
-            .col.l6.s12
-                h5 About Me
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            .col.l4.offset-l2.s12
-                h5.white-text Connect
-                ul
-                    li
-                        a.grey-text.text-lighten-3(href='#') Facebook
-                    li
-                        a.grey-text.text-lighten-3(href='#') Twitter
-                    li
-                        a.grey-text.text-lighten-3(href='#') Linked In
-                    li
-                        a.grey-text.text-lighten-3(href='#') Instagram
-    .footer-copyright.grey.darken-4
-        .container.center-align &copy; 2018 Learnet-Fedesoft
-// Compiled and minified JavaScript
-script(src='https://code.jquery.com/jquery-3.3.1.min.js')
-script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js')
+        p.float-right
+            a(href='#') Volver arriba
+        p LearNet. La educacion a tu alcance.
+        p
+            | Eres nuevo?
+            a(href='../UserRegister/UserRegister.html') Registrate!
+            |  o visita nuestro
+            a(href='../Forum/ForumMenu.html') Foro
+            | . donde nuestra comunidad te ayudara sin dudarlo.
+// Sidenav Here
+.sidenav
+    .container.sidenav-header
+        .close-nav
+            i.fas.fa-times
+        span.sidenav-heading Menu
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fas.fa-user
+        |  Usuario
+    .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
+        a.dropdown-item(href='../Login/Login.html') Ingresar
+        a.dropdown-item(href='../UserRegister/UserRegister.html') Registrarme
+    hr.my-4
+    a(href='../Cover/cover.html' title='')
+        i.fas.fa-home
+        |  Inicio
+    a(href='../SearchPage/Buscador.html' title='')
+        i.fas.fa-search
+        |  Buscador
+    a(href='#' title='')
+        i.fas.fa-book-reader
+        |  Blog
+    a.activesb(href='../Forum/ForumMenu.html' title='')
+        i.fab.fa-wpforms
+        |  Foro
+    a(href='../Cover/contacto.html' title='')
+        i.fas.fa-question-circle
+        |  Acerca de
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
 script.
-    $(document).ready(function () {
-        $('.sidenav').sidenav();
-        $('.materialboxed').materialbox();
-        $('.parallax').parallax();
-        $('.tabs').tabs();
-        $('.datepicker').datepicker({
-            disableWeekends: true,
-            yearRange: 1
-        });
-        $('.tooltipped').tooltip();
-        $('.scrollspy').scrollSpy();
-    });
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+script(src='static/popper.js')
+script(src='static/bootstrap.js')
+script(src='static/holder.js')
+script(src='static/sidenav.js')
+svg(xmlns='http://www.w3.org/2000/svg' width='348' height='225' viewbox='0 0 348 225' preserveaspectratio='none' style='display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;')
+    defs
+        style(type='text/css').
+    text(x='0' y='17' style='font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif') Thumbnail
