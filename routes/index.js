@@ -17,4 +17,19 @@ router.get('/UserRegister', function (req, res, next) {
     res.render('UserRegister', {title: 'UserRegister'});
 });
 
+//ForumMenu
+router.get('/ForumMenu', function (req, res, next) {
+    res.render('ForumMenu', {title: 'ForumMenu'});
+});
+
+//ForumView
+router.get('/ForumView', function (req, res, next) {
+    res.render('ForumView', {title: 'ForumView'});
+});
+
+//animation1
+router.get('/animation1', function (req, res, next) {
+    res.render('animation1', {title: 'animation1'});
+});
+
 module.exports = router;

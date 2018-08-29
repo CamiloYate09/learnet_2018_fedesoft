@@ -30,7 +30,12 @@ header
                 .input-group-prepend
                     .input-group-text
                         i.fa.fa-user.text-info
-                input#nombre.form-control(type='text' name='nombre' placeholder='Nombre y Apellido' required='')
+                input#nombre.form-control(type='text' name='nombre' placeholder='Nombre' required='')
+            .input-group.mb-2
+                .input-group-prepend
+                    .input-group-text
+                        i.fa.fa-user.text-info
+                        input#nombre.form-control(type='text' name='apellido' placeholder='Apellido' required='')
         .form-group
             .input-group.mb-2
                 .input-group-prepend
@@ -66,10 +71,10 @@ footer
         a.dropdown-item(href='Login.jade') Ingresar
         a.dropdown-item(href='../UserRegister/UserRegister.html') Registrarme
     hr.my-4
-    a(href='../Cover/cover.html' title='')
+    a(href='index' title='')
         i.fas.fa-home
         |  Inicio
-    a(href='../SearchPage/Buscador.html' title='')
+    a(href='index' title='')
         i.fas.fa-search
         |  Buscador
     a(href='#' title='')
