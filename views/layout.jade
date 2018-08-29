@@ -24,13 +24,6 @@ header
                 span.navbar-toggler-icon
 main(role='main')
     #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
-        //
-          Carousel Toogler for Slide
-          <ol class="carousel-indicators">
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
-          </ol>
         .carousel-inner
             .carousel-item.active
                 img.d-block.w-100(src='http://www.revistagenteqroo.com/wp-content/uploads/2018/03/bbva-educacion-e1464704439593-1920x0-c-f.jpg' alt='First slide')
@@ -92,9 +85,9 @@ footer.text-muted
         p LearNet. La educacion a tu alcance.
         p
             | Eres nuevo?
-            a(href='../UserRegister/UserRegister.html') Registrate!
+            a(href='/html_master/UserRegister.jade') Registrate!
             |  o visita nuestro
-            a(href='../Forum/ForumMenu.html') Foro
+            a(href='/html_master/ForumMenu.jade') Foro
             | . donde nuestra comunidad te ayudara sin dudarlo.
 // Sidenav Here
 .sidenav
@@ -106,19 +99,19 @@ footer.text-muted
         i.fas.fa-user
         |  Usuario
     .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
-        a.dropdown-item(href='../Login/Login.html') Ingresar
-        a.dropdown-item(href='../UserRegister/UserRegister.html') Registrarme
+        a.dropdown-item(href='Login') Ingresar
+        a.dropdown-item(href='UserRegister') Registrarme
     hr.my-4
     a(href='../Cover/cover.html' title='')
         i.fas.fa-home
         |  Inicio
-    a(href='../SearchPage/Buscador.html' title='')
+    a(href='../html_master/animation1.jade' title='')
         i.fas.fa-search
         |  Buscador
     a(href='#' title='')
         i.fas.fa-book-reader
         |  Blog
-    a.activesb(href='../Forum/ForumMenu.html' title='')
+    a.activesb(href='../Forum/ForumMenu.jade' title='')
         i.fab.fa-wpforms
         |  Foro
     a(href='../Cover/contacto.html' title='')
