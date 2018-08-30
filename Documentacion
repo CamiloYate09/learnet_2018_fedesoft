@@ -4,7 +4,7 @@ Primeros pasos
 3:(express learnet) nombre del proyecto (NOS CREA EL PROYECTO BASE)
 4:(npm install)instar los paquetes dentro de la carpeta anterior creada
 5:(npm start) correr el servidor
-5.1: (https://html-to-pug.com/)converson de html a pug
+5.1: (https://html-to-pug.com/)converson de html a pug o jade
 6:(npm install --save pg) instalar el paquete de postgresql
 7:(repositorio en github) => (learnet_2018_fedesoft)
 8:(postgresql) => url  directa (postgres://izteaxiwbxmnih:d4c9531c5a100b8b9dc0123b7c277c146145b1851fbff8b1f7e698d86f05c190@ec2-54-243-216-33.compute-1.amazonaws.com:5432/dd9avmnqoubhtc
@@ -25,6 +25,8 @@ d4c9531c5a100b8b9dc0123b7c277c146145b1851fbff8b1f7e698d86f05c190
 11:(https://github.com/CamiloYate09/learnet_2018_fedesoft) github repositorio
 
 12: (heroku learnet2019@gmail.com contraseña: App2018team@ ) usuario y contraseña para heroku
+
+14: (https://github.com/ionic-team/ionic-conference-app) aplicacion ionic para descargar de github y compilar
 
 
 
